@@ -1,0 +1,15 @@
+.container {
+  box-sizing: content-box;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .first {
+    height: 90vh;
+
+    .title {
+      text-align: center;
+      padding-top: 100px;
+      color: coral;
+    }
+  }
+}
