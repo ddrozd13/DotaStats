@@ -2,6 +2,8 @@
   font-size: 28px;
   font-weight: bold;
 
+
+
   .appBar {
     padding: 12px 0;
     background-color: #fff;
@@ -11,14 +13,21 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    margin: 0 auto;
+    cursor: pointer;
   }
 
   .navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     color: #000;
 
     :nth-child(n) {
       margin-right: 30px;
       cursor: pointer;
+      text-decoration: none;
+      color: #000;
     }
   }
 
@@ -41,6 +50,7 @@
     font-size: 40px;
     text-decoration: none;
     color: #000;
+    margin: 0;
 
     img {
       width: 30px;
@@ -51,3 +61,27 @@
 }
 
 
+@media (max-width: 470px) {
+  .container .navigation {
+    display: none;
+  }
+
+  .container .logoContainer div {
+    display: none;
+  }
+}
+@media (max-width: 740px) {
+  .container .navigation {
+    display: none;
+  }
+
+  .container .logoContainer {
+    margin: 0;
+  }
+
+  .container .navigationContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

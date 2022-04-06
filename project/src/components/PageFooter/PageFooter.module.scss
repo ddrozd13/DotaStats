@@ -1,0 +1,57 @@
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  z-index: 5;
+  background-color: #000;
+  position: relative;
+
+  .footer_Logos {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .footer_Logo {
+      margin: 0px 15px 20px 15px;
+      max-height: 30px;
+    }
+  }
+
+  .footer_Legal {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    padding: 0 20px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 390px) {
+  .footer .footer_Logos{
+    width: 100%;
+  }
+  .footer .footer_Legal{
+    padding: 0;
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .footer .footer_Logos{
+    width: 100%;
+  }
+  .footer .footer_Legal{
+    padding: 0;
+    width: 100%;
+  }
+}
