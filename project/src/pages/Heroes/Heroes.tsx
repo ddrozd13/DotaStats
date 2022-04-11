@@ -47,7 +47,6 @@ const Heroes: FC = () => {
   }, []);
 
   const filteredHeroes = heroes?.filter(hero => (filterHeroes.attribute === null ||  hero.primary_attr === filterHeroes.attribute) && (filterHeroes.complexity === null ||  hero.complexity === filterHeroes.complexity))
-
   return (
     <PageLayout>
       <div className={styles.container}>
